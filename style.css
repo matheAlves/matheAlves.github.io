@@ -1,0 +1,16 @@
+p {
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Cormorant', serif;
+    background-color: #52FFB8;
+    color: #503D3F;
+    font-size: 20px;
+}
+#nome{
+    font-family:'Life Savers', cursive;
+    background-color: #4DFFF3;
+    font-weight: bold;
+}
+body{
+    background-color: #539987;
+}
