@@ -1,16 +1,11 @@
-p {
-    text-align: justify;
-    text-justify: inter-word;
-    font-family: 'Cormorant', serif;
-    background-color: #52FFB8;
-    color: #503D3F;
-    font-size: 20px;
+* {
+  background-color: #f0f0f0;
+  /* display: flex; */
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 40px;
 }
-#nome{
-    font-family:'Life Savers', cursive;
-    background-color: #4DFFF3;
-    font-weight: bold;
-}
-body{
-    background-color: #539987;
+
+img {
+  width: 670px;
 }
