@@ -1,11 +1,27 @@
 * {
-  background-color: #f0f0f0;
-  /* display: flex; */
+  /* background-color: #f0f0f0; */
+  font-size: 45px;
   text-align: center;
   font-family: 'Cormorant Garamond', serif;
-  font-size: 40px;
 }
 
 img {
+  margin-top: 20px;
   width: 670px;
+  border-radius: 50%;
+}
+
+p {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 30px;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
 }
