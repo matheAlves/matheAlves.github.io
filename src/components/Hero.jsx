@@ -1,24 +1,20 @@
 import { motion } from 'framer-motion'
-
+import heroBg from '../assets/herobg.jpg'
 import { styles } from '../styles'
 import ComputerCanvas from './Computer'
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
-      <div className={`absolute top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-10`}>
-        
-        <div className="w-0.5 sm:h-96 h-40 terminal-green-gradient" />
-
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Oi, eu sou o <span className="text-terminal-green">Matheus</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            Um desenvolvedor fullstack entusiasta da <span className="text-[#915EFF]">criatividade</span>.
-          </p>
-        </div>
+    <section className={`relative flex h-svh w-full flex-col overflow-hidden lg:flex-row`}>
+      <div className={` ${styles.paddingX} ${styles.paddingY} flex flex-col items-center justify-center gap-5 lg:w-2/4`}>
+        <h1 className={`${styles.heroHeadText} text-white`}>
+          Oi, eu sou o <span className="text-primary">Matheus</span>
+        </h1>
+        <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          Um desenvolvedor fullstack entusiasta da <span className="text-secondary">criatividade</span>.
+        </p>
       </div>
 
+      <img className="absolute top-1/4 lg:top-0 z-[-1] h-1/2 lg:left-1/3 lg:h-screen" src={heroBg} alt="hero background" />
       <ComputerCanvas />
 
       {/* <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
