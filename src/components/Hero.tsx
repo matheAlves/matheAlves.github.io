@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion'
+// import { motion } from 'framer-motion'
 import heroBg from '../assets/herobg.jpg'
-import { styles } from '../styles'
-import ComputerCanvas from './Computer'
+import { styles } from '../styles.ts'
+import ComputerCanvas from './Computer.tsx'
 const Hero = () => {
   return (
     <section className={`relative flex h-svh w-full flex-col overflow-hidden lg:flex-row`}>
