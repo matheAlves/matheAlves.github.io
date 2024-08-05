@@ -2,6 +2,7 @@
 import { cn } from '../utils'
 import { useEffect, useRef, useState } from 'react'
 import { createNoise3D } from 'simplex-noise'
+import { isMobile } from 'react-device-detect'
 
 export const WavyBackground = ({
   children,
@@ -94,9 +95,9 @@ export const WavyBackground = ({
       typeof window !== 'undefined' && navigator.userAgent.includes('Safari') && !navigator.userAgent.includes('Chrome')
     )
   }, [])
-
+  console.log('isMobile? ', isMobile)
   return (
-    <div className={cn('flex flex-col items-center justify-center', containerClassName)}>
+    <div className={cn(`${isMobile && 'h-svh'} flex flex-col items-center justify-center`, containerClassName)}>
       <canvas
         className="absolute inset-0 z-0"
         ref={canvasRef}
