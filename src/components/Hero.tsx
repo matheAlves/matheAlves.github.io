@@ -18,7 +18,7 @@ const Hero = () => {
 
           <div className="flex gap-5 mt">
             <img className={`${styles.heroLink} w-10 h-10 lg:w-16 lg:h-16 mt-5 `} src={github} alt="github logo" onClick={() => window.open('https://github.com/matheAlves', '_blank')}/>
-            <img className={`${styles.heroLink} w-10 h-10 lg:w-[4.5rem] lg:h-16 mt-5`} src={linkedin} alt="linkedin logo" onClick={() => window.open('https://www.linkedin.com/in/mathealves/', '_blank')}/>
+            <img className={`${styles.heroLink} w-[2.75rem] h-10 lg:w-[4.5rem] lg:h-16 mt-5`} src={linkedin} alt="linkedin logo" onClick={() => window.open('https://www.linkedin.com/in/mathealves/', '_blank')}/>
           </div>
         </div>
 
