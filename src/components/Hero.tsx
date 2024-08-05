@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
         <img className="w-80 lg:w-auto" src={matheus} alt="hero background" />
 
-        <div className="absolute  flex w-full items-center justify-center bottom-10">
+        <div className="absolute  bottom-32  flex w-full items-center justify-center xs:bottom-10">
           <a href="#about">
             <div className="flex h-[64px] w-[35px] items-start justify-center rounded-3xl border-4 border-primary p-2">
               <motion.div
