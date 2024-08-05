@@ -59,7 +59,7 @@ const ComputerCanvas = () => {
       <pointLight intensity={1} />
       <ambientLight intensity={0.05} />
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls enableZoom={false} />
+        {!isMobile && <OrbitControls enableZoom={false} />}
         <Computer isMobile={isMobile} />
       </Suspense>
     </Canvas>
