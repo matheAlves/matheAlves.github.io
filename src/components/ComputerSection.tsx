@@ -1,5 +1,4 @@
 import ComputerCanvas from './Computer'
-import { styles } from '../styles.ts'
 
 const ComputerSection = () => {
   return (
