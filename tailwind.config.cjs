@@ -20,7 +20,7 @@ module.exports = {
       screens: {
         xs: '450px'
       },
-      backgroundImage: { '2000-pattern': "url('/src/assets/herobg.jpg')" }
+      backgroundImage: { '2000-pattern': "url('/src/assets/2000sbg.jpg')" }
     }
   },
   plugins: [addVariablesForColors]
