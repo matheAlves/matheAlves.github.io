@@ -4,6 +4,22 @@
 @tailwind components;
 @tailwind utilities;
 
+::-webkit-scrollbar {
+  width:  0.75em
+}
+
+::-webkit-scrollbar-track {
+  background: #000000
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5feaff;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5feaffcb;
+}
+
 html.lenis,
 html.lenis body {
   height: auto;
