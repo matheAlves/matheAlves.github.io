@@ -1,26 +1,25 @@
 import Hero from './components/Hero'
 import { BrowserRouter } from 'react-router-dom'
 import ComputerSection from './components/ComputerSection'
-import Lenis from 'lenis'
+import { ReactLenis, useLenis } from 'lenis/react'
 function App() {
-  const lenis = new Lenis()
+  const lenis = useLenis(({ scroll }) => {
+    console.log('away')
+  })
 
-  // lenis.on('scroll', (e: Lenis) => {
-  //   console.log(e)
-  // })
-
-  function raf(time: number) {
-    lenis.raf(time)
-    requestAnimationFrame(raf)
-  }
-
-  requestAnimationFrame(raf)
   return (
     <BrowserRouter>
-      <div className="relative z-0 overflow-hidden bg-black">
-        <Hero />
-        <ComputerSection />
-      </div>
+      <ReactLenis
+        root
+        options={{
+          syncTouch: true,
+        }}
+      >
+        <div className="relative z-0 overflow-hidden bg-black">
+          <Hero />
+          <ComputerSection />
+        </div>
+      </ReactLenis>
     </BrowserRouter>
   )
 }
