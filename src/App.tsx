@@ -3,9 +3,9 @@ import { BrowserRouter } from 'react-router-dom'
 import ComputerSection from './components/ComputerSection'
 import { ReactLenis, useLenis } from 'lenis/react'
 function App() {
-  const lenis = useLenis(({ scroll }) => {
-    console.log('away')
-  })
+  // const lenis = useLenis(({ scroll: number }) => {
+  //   console.log(scroll)
+  // })
 
   return (
     <BrowserRouter>
