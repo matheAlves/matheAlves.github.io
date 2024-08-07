@@ -21,7 +21,7 @@ const Hero = () => {
         transition={{ duration: 1 }}
         className={` ${styles.paddingX} ${styles.paddingY} flex flex-col items-center justify-center`}>
         <h1 className={`${styles.heroHeadText}`}>
-          Oi, eu sou o <span className="text-primary">Matheus</span>
+          Oi, eu sou o <span className="text-primary font-monumentBlack">Matheus</span>
         </h1>
         <p className={`${styles.heroSubText} text-white-100`}>
           Um desenvolvedor fullstack entusiasta da <span className="text-[#915EFF]">criatividade</span>.
