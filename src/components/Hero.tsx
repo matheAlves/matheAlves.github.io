@@ -7,10 +7,10 @@ import linkedin from '../assets/linkedin.png'
 
 const Hero = () => {
   const { scrollY } = useScroll();
-  const imageX = useTransform(scrollY, [0, 300], [0, 100]);
-  const imageOpacity = useTransform(scrollY, [0, 300], [1, 0])
-  const textX = useTransform(scrollY, [0, 300], [0, -100]);
-  const textOpacity = useTransform(scrollY, [0, 300], [1, 0])
+  const imageX = useTransform(scrollY, [0, 500], [0, 100]);
+  const imageOpacity = useTransform(scrollY, [0, 500], [1, 0])
+  const textX = useTransform(scrollY, [0, 500], [0, -100]);
+  const textOpacity = useTransform(scrollY, [0, 500], [1, 0])
 
   return (
     <WavyBackground className={`relative flex min-h-screen flex-col items-center lg:flex-row`}>
