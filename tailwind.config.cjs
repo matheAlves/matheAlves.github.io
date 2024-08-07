@@ -5,6 +5,10 @@ module.exports = {
   mode: 'jit',
   theme: {
     extend: {
+      fontFamily: {
+        monumentRegular: ['Monument Regular'],
+        monumentBlack: ['Monument Black']
+      },
       colors: {
         primary: '#e1ffe9',
       },

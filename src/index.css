@@ -1,4 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+@font-face {
+  font-family: 'Monument Regular';
+  src: url('./fonts/PPMonumentExtended-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Monument Black';
+  src: url('./fonts/PPMonumentExtended-Black.otf') format('opentype');
+}
 
 @tailwind base;
 @tailwind components;
@@ -51,7 +60,7 @@ html.lenis body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Belanosima', sans-serif;
+  font-family: 'Monument Regular', sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
 }
