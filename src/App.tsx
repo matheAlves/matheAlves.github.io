@@ -18,7 +18,6 @@ function App() {
         <div className="relative z-0 overflow-hidden">
           <Hero />
           <ComputerSection />
-          <section className="h-screen"/>
         </div>
       </ReactLenis>
     </BrowserRouter>
