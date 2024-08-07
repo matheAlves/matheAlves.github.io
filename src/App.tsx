@@ -15,9 +15,10 @@ function App() {
           syncTouch: true,
         }}
       >
-        <div className="relative z-0 overflow-hidden bg-black">
+        <div className="relative z-0 overflow-hidden">
           <Hero />
           <ComputerSection />
+          <section className="h-screen"/>
         </div>
       </ReactLenis>
     </BrowserRouter>

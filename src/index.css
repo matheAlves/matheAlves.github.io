@@ -4,6 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+::selection {
+ background: #5feaff;
+ /* background: #e1ffe9; */
+ color: white;
+
+}
 ::-webkit-scrollbar {
   width:  0.75em
 }
@@ -47,6 +54,10 @@ html.lenis body {
   font-family: 'Belanosima', sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
+}
+
+body {
+  background: hsl(0, 0%, 10%);
 }
 
 /* canvas- styles */
