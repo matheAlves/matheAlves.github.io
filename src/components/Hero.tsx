@@ -13,13 +13,13 @@ const Hero = () => {
   const textOpacity = useTransform(scrollY, [0, 500], [1, 0])
 
   return (
-    <WavyBackground className={`relative flex min-h-screen flex-col items-center lg:flex-row`}>
+    <WavyBackground className={`relative flex min-h-screen flex-col items-center lg:flex-row ${styles.paddingX}`}>
       <motion.div
         style={{ x: textX, opacity: textOpacity }}
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 1 }}
         transition={{ duration: 1 }}
-        className={` ${styles.paddingX} ${styles.paddingY} flex flex-col items-center justify-center max-w-5xl`}>
+        className={` px-0 ${styles.paddingY} flex flex-col items-center justify-center max-w-5xl pr-0`}>
         <h1 className={`${styles.heroHeadText}`}>
           Oi, eu sou o <span className="text-primary font-monumentBlack">Matheus</span>
         </h1>
