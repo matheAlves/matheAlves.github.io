@@ -63,7 +63,7 @@ export const WavyBackground = ({
       ctx.lineWidth = waveWidth || 50
       ctx.strokeStyle = waveColors[i % waveColors.length]
       for (x = 0; x < w; x += 5) {
-        var y = noise(x / 1000, 0.03 * i, nt) * 400
+        var y = noise(x / 1000, 0.045 * i, nt) * 400
         ctx.lineTo(x, y + h * 0.5) // adjust for height, currently at 50% of the container
       }
       ctx.stroke()
