@@ -29,13 +29,13 @@ const Hero = () => {
 
         <div className="mt flex gap-5">
           <img
-            className={`${styles.heroLink} mt-5 h-10 w-10 lg:h-16 lg:w-16`}
+            className={`${styles.heroLink} mt-5 h-10 w-10 sm:h-16 sm:w-16`}
             src={github}
             alt="github logo"
             onClick={() => window.open('https://github.com/matheAlves', '_blank')}
           />
           <img
-            className={`${styles.heroLink} mt-5 h-10 w-[2.75rem] lg:h-16 lg:w-[4.5rem]`}
+            className={`${styles.heroLink} mt-5 h-10 w-[2.75rem] sm:h-16 sm:w-[4.5rem]`}
             src={linkedin}
             alt="linkedin logo"
             onClick={() => window.open('https://www.linkedin.com/in/mathealves/', '_blank')}
