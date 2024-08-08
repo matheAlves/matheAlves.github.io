@@ -10,7 +10,7 @@ const Hero = () => {
   const imageX = useTransform(scrollY, [0, 500], [0, 100]);
   const imageOpacity = useTransform(scrollY, [0, 500], [0.8, 0])
   const textX = useTransform(scrollY, [0, 500], [0, -100]);
-  const textOpacity = useTransform(scrollY, [0, 500], [0.8, 0])
+  const textOpacity = useTransform(scrollY, [0, 500], [0.9, 0])
 
   return (
     <WavyBackground className={`relative flex min-h-screen flex-col items-center lg:flex-row ${styles.paddingX}`}>
