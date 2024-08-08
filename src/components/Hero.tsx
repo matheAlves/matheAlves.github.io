@@ -8,16 +8,16 @@ import linkedin from '../assets/linkedin.png'
 const Hero = () => {
   const { scrollY } = useScroll();
   const imageX = useTransform(scrollY, [0, 500], [0, 100]);
-  const imageOpacity = useTransform(scrollY, [0, 500], [1, 0])
+  const imageOpacity = useTransform(scrollY, [0, 500], [0.8, 0])
   const textX = useTransform(scrollY, [0, 500], [0, -100]);
-  const textOpacity = useTransform(scrollY, [0, 500], [1, 0])
+  const textOpacity = useTransform(scrollY, [0, 500], [0.8, 0])
 
   return (
     <WavyBackground className={`relative flex min-h-screen flex-col items-center lg:flex-row ${styles.paddingX}`}>
       <motion.div
         style={{ x: textX, opacity: textOpacity }}
         initial={{ opacity: 0, x: -100 }}
-        animate={{ opacity: 1, x: 1 }}
+        animate={{ opacity: 0.7, x: 1 }}
         transition={{ duration: 1 }}
         className={` px-0 ${styles.paddingY} flex flex-col items-center justify-center max-w-5xl pr-0`}>
         <h1 className={`${styles.heroHeadText}`}>
@@ -46,7 +46,7 @@ const Hero = () => {
       <motion.div
         style={{ x: imageX, opacity: imageOpacity }}
         initial={{ opacity: 0, x: 100 }}
-        animate={{ opacity: 1, x: 1 }}
+        animate={{ opacity: 0.8, x: 1 }}
         transition={{ duration: 1 }}
       >
         <img className="w-80 lg:w-auto" src={matheus} alt="hero background" />
