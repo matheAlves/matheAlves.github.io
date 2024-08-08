@@ -19,7 +19,7 @@ const Hero = () => {
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 1 }}
         transition={{ duration: 1 }}
-        className={` ${styles.paddingX} ${styles.paddingY} flex flex-col items-center justify-center`}>
+        className={` ${styles.paddingX} ${styles.paddingY} flex flex-col items-center justify-center max-w-5xl`}>
         <h1 className={`${styles.heroHeadText}`}>
           Oi, eu sou o <span className="text-primary font-monumentBlack">Matheus</span>
         </h1>
