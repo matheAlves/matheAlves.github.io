@@ -13,7 +13,7 @@ const Hero = () => {
   const textOpacity = useTransform(scrollY, [0, 500], [0.9, 0])
 
   return (
-    <WavyBackground className={`relative flex min-h-screen flex-col items-center md:flex-row`}>
+    <WavyBackground containerClassName='px-5' className={`relative flex min-h-screen flex-col items-center md:flex-row`}>
       <motion.div
         style={{ x: textX, opacity: textOpacity }}
         initial={{ opacity: 0, x: -100 }}
