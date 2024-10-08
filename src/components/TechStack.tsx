@@ -16,7 +16,7 @@ import {
 const TechStack = () => {
     return (
         <section
-            className="bg-cyber-goddess h-svh bg-cover bg-[center_20%] flex justify-around items-center flex-col relative"
+            className="bg-cyber-goddess h-svh bg-cover bg-[center_20%] flex justify-around items-center flex-col relative px-5"
         >
             <h1
                 className="text-primary font-monumentBlack text-4xl md:text-5xl lg:text-5xl"
@@ -101,7 +101,11 @@ const TechStack = () => {
                     </Card>
                 </TabsContent>
             </Tabs>
-            <h1 className="text-primary absolute bottom-0 text-4xl">em construção...</h1>
+
+            <footer className="absolute bottom-0 text-center"> 
+                <p className="text-primary   text-xl">© 2024 · Matheus Alves</p>
+                <p className="text-primary   text-xl">em construção.</p>
+            </footer>
         </section>
     )
 }
