@@ -1,7 +1,9 @@
-import Hero from './components/Hero'
 import { BrowserRouter } from 'react-router-dom'
-import ComputerSection from './components/ComputerSection'
 import { ReactLenis } from 'lenis/react'
+import Hero from './components/Hero'
+import ComputerSection from './components/ComputerSection'
+import TechStack from './components/TechStack' 
+
 function App() {
   // const lenis = useLenis(({ scroll: number }) => {
   //   console.log(scroll)
@@ -15,9 +17,10 @@ function App() {
           syncTouch: true,
         }}
       >
-        <div className="relative z-0 overflow-hidden">
+        <div className="relative overflow-hidden">
           <Hero />
           <ComputerSection />
+          <TechStack />
         </div>
       </ReactLenis>
     </BrowserRouter>

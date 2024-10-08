@@ -8,7 +8,7 @@ const styles = {
   heroSubText: 'text-white font-medium lg:text-3xl text-[16px] leading-tight mt-1 self-start',
 
   heroLink:
-    'hover:cursor-pointer transition-transform duration-200 ease-in-out transform hover:scale-110 hover:cursor-pointer hover:cursor-pointer'
+    'hover:cursor-pointer transition-transform duration-200 ease-in-out transform hover:scale-105 hover:cursor-pointer hover:cursor-pointer'
 }
 
 export { styles }

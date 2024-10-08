@@ -4,7 +4,6 @@ const ComputerSection = () => {
   return (
     <section className="bg-2000-pattern h-svh bg-cover flex justify-center items-center flex-col">
       <ComputerCanvas />
-      <h1 className="text-4xl">em construção</h1>
     </section>
   )
 }
