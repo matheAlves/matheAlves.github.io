@@ -91,7 +91,7 @@ const TechStack = () => {
                             <br />
                             * docker
                             <br />
-                            <br />
+                            * heroku
 
 
 
