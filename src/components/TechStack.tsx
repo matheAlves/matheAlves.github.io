@@ -25,9 +25,9 @@ const TechStack = () => {
     return (
         <motion.section
             className="min-h-svh bg-cover bg-[center_20%] flex justify-around items-center flex-col relative px-5"
-            style={{opacity: isMobile ? 1 : imageOpacity}}
+            style={{ opacity: imageOpacity }}
         >
-            <StarsCanvas />
+            {isMobile && <StarsCanvas />}
             <h1
                 className="text-primary font-monumentBlack text-4xl md:text-5xl lg:text-5xl"
             >tech stack</h1>
