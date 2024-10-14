@@ -6,11 +6,12 @@ import github from '../assets/github.png'
 import linkedin from '../assets/linkedin.png'
 
 const Hero = () => {
-  const { scrollY } = useScroll();
+  const { scrollY, scrollYProgress } = useScroll();
   // const imageX = useTransform(scrollY, [0, 500], [0, 100]);
   // const imageOpacity = useTransform(scrollY, [0, 500], [0.9, 0])
   const textX = useTransform(scrollY, [0, 500], [0, -100]);
   const textOpacity = useTransform(scrollY, [0, 500], [0.9, 0])
+  const imageOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
 
   return (
     <WavyBackground containerClassName='px-5' className={`relative flex min-h-screen flex-row items-center md:flex-row`}>
@@ -52,9 +53,10 @@ const Hero = () => {
         <img className="w-80 lg:w-auto" src={matheus} alt="hero background" />
       </motion.div> */}
 
-      <div className="absolute bottom-32 flex w-full items-center justify-center xs:bottom-10">
+      <motion.div style={{ opacity: imageOpacity }} className="absolute bottom-32 flex w-full items-center justify-center xs:bottom-10">
         <div className="flex h-[64px] w-[35px] items-start justify-center rounded-3xl border-4 border-primary p-2">
           <motion.div
+
             animate={{
               y: [0, 24, 0]
             }}
@@ -63,10 +65,10 @@ const Hero = () => {
               repeat: Infinity,
               repeatType: 'loop'
             }}
-            className="mb-1 h-3 w-3 rounded-full bg-primary"
+            className="mb-1 h-3 w-3 rounded-full bg-primary  "
           />
         </div>
-      </div>
+      </motion.div>
     </WavyBackground>
   )
 }
