@@ -15,6 +15,7 @@ import {
 
 import { motion, useTransform, useScroll } from "framer-motion"
 import { styles } from "@/styles"
+import StarsCanvas from "./Stars"
 
 const TechStack = () => {
     const { scrollYProgress } = useScroll();
@@ -25,6 +26,7 @@ const TechStack = () => {
             className="min-h-svh bg-cover bg-[center_20%] flex justify-around items-center flex-col relative px-5"
             style={{opacity: imageOpacity}}
         >
+            <StarsCanvas />
             <h1
                 className="text-primary font-monumentBlack text-4xl md:text-5xl lg:text-5xl"
             >tech stack</h1>
