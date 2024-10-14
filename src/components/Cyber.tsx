@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
+import StarsCanvas from "./Stars";
 const Cyber = () => {
     const { scrollYProgress } = useScroll();
     // const isMobile = window.matchMedia('(max-width: 500px)').matches;
@@ -8,11 +9,11 @@ const Cyber = () => {
 
     return (
         <motion.div
-            style={{ y: imageY, opacity: imageOpacity }}          
+            style={{ y: imageY, opacity: imageOpacity }}
 
             className="bg-cyber-goddess md:bg-cover h-full md:h-[1526px] absolute w-full z-0 bg-contain bg-bottom md:bg-top bg-no-repeat"
         >
-
+            <StarsCanvas />
         </motion.div>
     );
 }
