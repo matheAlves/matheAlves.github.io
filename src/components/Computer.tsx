@@ -10,7 +10,7 @@ const Computer = ({ isMobile }: { isMobile: boolean }) => {
   const meshRef = useRef<THREE.Mesh>(null)
 
   useFrame((_state, delta) => {
-    if (meshRef.current) {
+    if (meshRef.current && isMobile) {
       meshRef.current.rotation.y -= delta * 0.5
     }
   })
@@ -59,7 +59,7 @@ const ComputerCanvas = () => {
       <pointLight intensity={1} />
       <ambientLight intensity={0.05} />
       <Suspense fallback={<CanvasLoader />}>
-        {!isMobile && <OrbitControls enableZoom={false} />}
+        {!isMobile && <OrbitControls autoRotate enableZoom={false} />}
         <Computer isMobile={isMobile} />
       </Suspense>
     </Canvas>
