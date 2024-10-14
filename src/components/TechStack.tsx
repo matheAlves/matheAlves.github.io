@@ -18,13 +18,14 @@ import { styles } from "@/styles"
 import StarsCanvas from "./Stars"
 
 const TechStack = () => {
+    const isMobile = window.matchMedia('(max-width: 500px)').matches;
     const { scrollYProgress } = useScroll();
     const imageOpacity = useTransform(scrollYProgress, [0, 0.3], [0, 1]);
 
     return (
         <motion.section
             className="min-h-svh bg-cover bg-[center_20%] flex justify-around items-center flex-col relative px-5"
-            style={{opacity: imageOpacity}}
+            style={{opacity: isMobile ? 1 : imageOpacity}}
         >
             <StarsCanvas />
             <h1
