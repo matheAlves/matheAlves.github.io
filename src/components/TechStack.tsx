@@ -34,22 +34,19 @@ const TechStack = () => {
                         <CardHeader>
                             <CardTitle>frontend</CardTitle>
                             <CardDescription>
-                                frontend technologies
+                                all that you touch, and all that you see...
                             </CardDescription>
                         </CardHeader>
                         <CardContent className="space-y-2">
-                            * react
-                            <br />
-                            * next.js
-                            <br />
-                            * typescript
-                            <br />
-                            * tailwindcss
-
+                            <ul
+                                className="list-disc list-inside"
+                            >
+                                <li>react</li>
+                                <li>next.js</li>
+                                <li>typescript</li>
+                                <li>tailwindcss</li>
+                            </ul>
                         </CardContent>
-                        {/* <CardFooter>
-                           
-                        </CardFooter> */}
                     </Card>
                 </TabsContent>
 
@@ -58,18 +55,16 @@ const TechStack = () => {
                         <CardHeader>
                             <CardTitle>backend</CardTitle>
                             <CardDescription>
-                                backend technologies.
+                                ...and all you create, and all you destroy...
                             </CardDescription>
                         </CardHeader>
                         <CardContent className="space-y-2">
-                            * node.js
-                            <br />
-                            * express
-                            <br />
-                            * typescript
-                            <br />
-                            * postgresql
-
+                            <ul className="list-disc list-inside">
+                                <li>node.js</li>
+                                <li>express</li>
+                                <li>typescript</li>
+                                <li>postgresql</li>
+                            </ul>
                         </CardContent>
                         {/* <CardFooter>
                         </CardFooter> */}
@@ -81,27 +76,23 @@ const TechStack = () => {
                         <CardHeader>
                             <CardTitle>tools & devOps</CardTitle>
                             <CardDescription>
-                                tools & devOps technologies.
+                                ...and everything under the sun is in tune...
                             </CardDescription>
                         </CardHeader>
                         <CardContent className="space-y-2">
-                            * git
-                            <br />
-                            * github
-                            <br />
-                            * docker
-                            <br />
-                            * heroku
-
-
-
+                            <ul className="list-disc list-inside">
+                                <li>git</li>
+                                <li>github</li>
+                                <li>docker</li>
+                                <li>heroku</li>
+                            </ul>
                         </CardContent>
                         {/* <CardFooter>
                         </CardFooter> */}
                     </Card>
                 </TabsContent>
             </Tabs>
-        </section>
+        </section >
     )
 }
 
