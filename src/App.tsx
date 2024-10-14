@@ -6,6 +6,7 @@ import TechStack from './components/TechStack'
 import Contact from './components/Contact'
 import StarsCanvas from './components/Stars'
 import { Toaster } from 'react-hot-toast';
+import Cyber from './components/Cyber'
 function App() {
   // const lenis = useLenis(({ scroll: number }) => {
   //   console.log(scroll)
@@ -23,8 +24,11 @@ function App() {
         <div className="relative overflow-hidden">
           <Hero />
         </div>
+        <div className=''>
+          <Cyber />
+          <TechStack />
+        </div>
         <ComputerSection />
-        <TechStack />
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />

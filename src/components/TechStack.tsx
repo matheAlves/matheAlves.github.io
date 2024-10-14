@@ -16,7 +16,7 @@ import {
 const TechStack = () => {
     return (
         <section
-            className="bg-cyber-goddess min-h-svh bg-cover bg-[center_20%] flex justify-around items-center flex-col relative px-5"
+            className="min-h-svh bg-cover bg-[center_20%] flex justify-around items-center flex-col relative px-5"
         >
             <h1
                 className="text-primary font-monumentBlack text-4xl md:text-5xl lg:text-5xl"

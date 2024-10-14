@@ -60,7 +60,7 @@ module.exports = {
   		},
   		backgroundImage: {
   			'2000-pattern': "url('/src/assets/2000sbg.jpg')",
-			'cyber-goddess': "url('/src/assets/cyber-goddess.png')",
+			'cyber-goddess': "url('/src/assets/cyber-png.png')",
 			'poolside': "url('/src/assets/poolside.jpg')",
   		},
   		borderRadius: {
