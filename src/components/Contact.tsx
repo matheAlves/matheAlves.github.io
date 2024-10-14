@@ -84,7 +84,6 @@ const Contact = () => {
 
       <footer className="absolute bottom-0 text-center">
         <p className="text-primary text-xs">© 2024 · Matheus Alves</p>
-        <p className="text-primary text-xs">em construção.</p>
       </footer>
     </motion.div>
 
