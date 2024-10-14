@@ -5,13 +5,23 @@ import toast from 'react-hot-toast';
 
 const Contact = () => {
 
-  const [loading, setLoading] = useState(false);
+  const [loading, _setLoading] = useState(false);
   const formRef = useRef<HTMLFormElement>(null);
   const EMAILJS_SERVICE_ID = "service_dhglwes"
   const EMAILJS_TEMPLATE_ID = "contact_form"
   const EMAILJS_PUBLIC_KEY = "BruW3Lg8kN4IPFy6K"
 
-  const sendEmail = (e) => {
+  interface EmailFormElements extends HTMLFormControlsCollection {
+    user_name: HTMLInputElement;
+    user_email: HTMLInputElement;
+    message: HTMLTextAreaElement;
+  }
+
+  interface EmailForm extends HTMLFormElement {
+    readonly elements: EmailFormElements;
+  }
+
+  const sendEmail = (e: React.FormEvent<EmailForm>) => {
     e.preventDefault();
 
     emailjs
