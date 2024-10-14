@@ -10,7 +10,9 @@ const styles = {
   heroLink:
     'hover:cursor-pointer transition-transform duration-200 ease-in-out transform hover:scale-105 hover:cursor-pointer hover:cursor-pointer',
 
-  opacity: 'opacity-75'
+  opacity: 'opacity-75',
+
+  fontItalic: 'font-monumentLightItalic',
 }
 
 export { styles }

@@ -8,10 +8,6 @@ import StarsCanvas from './components/Stars'
 import { Toaster } from 'react-hot-toast';
 import Cyber from './components/Cyber'
 function App() {
-  // const lenis = useLenis(({ scroll: number }) => {
-  //   console.log(scroll)
-  // })
-
   return (
     <BrowserRouter>
       <ReactLenis

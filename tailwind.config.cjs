@@ -8,7 +8,8 @@ module.exports = {
   	extend: {
   		fontFamily: {
   			monumentRegular: ['Monument Regular'],
-  			monumentBlack: ['Monument Black']
+  			monumentBlack: ['Monument Black'],
+			monumentLightItalic: ['Monument Light Italic'],
   		},
   		colors: {
   			primary: {

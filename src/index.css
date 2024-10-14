@@ -9,6 +9,11 @@
   src: url('./fonts/PPMonumentExtended-Black.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Monument Light Italic';
+  src: url('./fonts/PPMonumentExtended-RegularItalic.otf') format('opentype');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
