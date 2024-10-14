@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import StarsCanvas from "./Stars";
+
 const Cyber = () => {
     const { scrollYProgress } = useScroll();
     // const isMobile = window.matchMedia('(max-width: 500px)').matches;
