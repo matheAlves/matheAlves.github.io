@@ -2,7 +2,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 const Cyber = () => {
     const { scrollYProgress } = useScroll();
     // const isMobile = window.matchMedia('(max-width: 500px)').matches;
-    const imageY = useTransform(scrollYProgress, [0, 1], [0, 700]);
+    const imageY = useTransform(scrollYProgress, [0, 1], [0, -700]);
 
 
     return (
