@@ -15,7 +15,7 @@ import {
 
 import { motion, useTransform, useScroll } from "framer-motion"
 import { styles } from "@/styles"
-import StarsCanvas from "./Stars"
+// import StarsCanvas from "./Stars"
 
 const TechStack = () => {
     // const isMobile = window.matchMedia('(max-width: 500px)').matches;
