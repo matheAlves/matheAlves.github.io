@@ -18,7 +18,7 @@ import { styles } from "@/styles"
 import StarsCanvas from "./Stars"
 
 const TechStack = () => {
-    const isMobile = window.matchMedia('(max-width: 500px)').matches;
+    // const isMobile = window.matchMedia('(max-width: 500px)').matches;
     const { scrollYProgress } = useScroll();
     const imageOpacity = useTransform(scrollYProgress, [0, 0.3], [0, 1]);
 
