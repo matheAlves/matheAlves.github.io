@@ -62,7 +62,7 @@ const Contact = () => {
           type="text"
           name="user_name"
           className={`${styles.opacity} h-10 p-2`}
-        placeholder="nome"
+          placeholder="nome"
         />
         <input
           type="email"
@@ -83,6 +83,8 @@ const Contact = () => {
       </form>
 
       <footer className="absolute bottom-0 text-center">
+        <p className="text-primary text-xs">art by <a href="https://www.domcake.net/">DOMCAKE</a> and <a href="https://eyeondesign.aiga.org/">AIGA Eye on Design</a>. 3d model by <a href='https://sketchfab.com/SketchyB0t_3D_Fabrication'>SketchyBot</a></p>
+
         <p className="text-primary text-xs">© 2024 · Matheus Alves</p>
       </footer>
     </motion.div>
