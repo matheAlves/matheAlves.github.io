@@ -77,7 +77,7 @@ const Contact = () => {
 
           placeholder="mensagem"
         />
-        <button type="submit" disabled={loading}>
+        <button className={`${styles.heroLink} hollographic-text` }type="submit" disabled={loading}>
           {loading ? 'enviando...' : 'enviar'}
         </button>
       </form>

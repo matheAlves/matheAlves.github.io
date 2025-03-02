@@ -7,9 +7,9 @@ const ComputerSection = () => {
         className="text-primary font-monumentBlack text-4xl md:text-5xl lg:text-5xl mt-28"
       >projetos</h1>
       <ComputerCanvas />
-      <a
-        href='https://genius.com/823422' target='_blank' rel='noreferrer'
-        className="font-monumentLightItalic text-primary text-[0.6rem] md:text-xs">em breve...</a>
+      <p
+
+        className="font-monumentLightItalic text-primary text-[0.6rem] md:text-xs">em breve...</p>
 
     </section>
   )
