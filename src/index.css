@@ -240,7 +240,7 @@ body {
     @apply bg-background text-foreground;
   }
 }
-.holographic-text {
+/* .holographic-text {
   font-weight: bold;
   font-size: 4rem;
   background-image: linear-gradient(
@@ -280,4 +280,4 @@ body {
   100% {
     background-position: 0% 50%;
   }
-}
+} */
