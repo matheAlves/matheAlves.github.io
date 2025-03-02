@@ -9,7 +9,7 @@ const ComputerSection = () => {
       <ComputerCanvas />
       <a
         href='https://genius.com/823422' target='_blank' rel='noreferrer'
-        className="font-monumentLightItalic text-primary text-[0.6rem] md:text-xs">...but the sun is eclipsed by the moon.</a>
+        className="font-monumentLightItalic text-primary text-[0.6rem] md:text-xs">em breve...</a>
 
     </section>
   )
