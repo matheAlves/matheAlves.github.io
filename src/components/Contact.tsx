@@ -55,7 +55,7 @@ const Contact = () => {
 
     <motion.div className='min-h-svh flex flex-col items-center justify-around bg-black-100 p-8 rounded-2xl'>
       <h1
-        className="text-primary font-monumentBlack text-4xl md:text-5xl lg:text-5xl"
+        className="text-primary font-monumentBlack text-4xl md:text-5xl lg:text-5xl holographic-text"
       >contato</h1>
       <form className='flex flex-[0.2] flex-col justify-around  text-white' ref={formRef} onSubmit={sendEmail}>
         <input
@@ -82,7 +82,7 @@ const Contact = () => {
         </button>
       </form>
 
-      <footer className="absolute bottom-0 text-center">
+      <footer className="absolute bottom-0 text-center holographic-text">
         <p className="text-primary text-xs">artwork: <a href="https://www.domcake.net/">DOMCAKE</a> · <a href="https://eyeondesign.aiga.org/">AIGA Eye on Design</a> · <a href='https://sketchfab.com/SketchyB0t_3D_Fabrication'>SketchyBot</a></p>
 
         <p className="text-primary text-xs">web development: © 2025 · Matheus Alves</p>

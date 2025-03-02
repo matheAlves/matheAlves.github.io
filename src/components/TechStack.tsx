@@ -29,7 +29,7 @@ const TechStack = () => {
         >
             {/* {!isMobile && <StarsCanvas />} */}
             <h1
-                className="text-primary font-monumentBlack text-4xl md:text-5xl lg:text-5xl"
+                className="text-primary font-monumentBlack text-4xl md:text-5xl lg:text-5xl holographic-text"
             >tech stack</h1>
             <Tabs defaultValue="frontend" >
                 <TabsList className="grid w-full grid-cols-3">
