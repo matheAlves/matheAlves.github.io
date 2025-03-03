@@ -7,7 +7,7 @@ import Contact from './components/Contact'
 import StarsCanvas from './components/Stars'
 import { Toaster } from 'react-hot-toast';
 import Cyber from './components/Cyber'
-import Profile from './components/Profile'
+// import Profile from './components/Profile'
 function App() {
   return (
     <BrowserRouter>
