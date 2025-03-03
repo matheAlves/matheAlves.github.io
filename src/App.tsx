@@ -22,10 +22,10 @@ function App() {
         <div className="relative overflow-hidden">
           <Hero />
         </div>
-
+{/* 
         <div className='relative'>
           <Profile />
-        </div>
+        </div> */}
 
         <div>
           <Cyber />
