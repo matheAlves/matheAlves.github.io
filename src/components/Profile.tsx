@@ -1,7 +1,7 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 
 const Profile = () => {
-  const { scrollY, scrollYProgress } = useScroll();
+  const { scrollY } = useScroll();
   const textX = useTransform(scrollY, [0, 900], [-100, 0]);
   const textOpacity = useTransform(scrollY, [0, 900], [0, 1])
   const bulletPoints = [
