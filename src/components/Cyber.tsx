@@ -4,7 +4,7 @@ import StarsCanvas from "@/components/Stars";
 const Cyber = () => {
     const { scrollYProgress } = useScroll();
     // const isMobile = window.matchMedia('(max-width: 500px)').matches;
-    const imageY = useTransform(scrollYProgress, [0, 1], [0, -700]);
+    const imageY = useTransform(scrollYProgress, [0, 2.5], [0, -700]);
     const imageOpacity = useTransform(scrollYProgress, [0, 0.3], [0, 1]);
 
 

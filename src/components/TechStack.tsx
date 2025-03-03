@@ -76,8 +76,6 @@ const TechStack = () => {
                                 <li>postgresql</li>
                             </ul>
                         </CardContent>
-                        {/* <CardFooter>
-                        </CardFooter> */}
                     </Card>
                 </TabsContent>
 
@@ -97,8 +95,6 @@ const TechStack = () => {
                                 <li>heroku</li>
                             </ul>
                         </CardContent>
-                        {/* <CardFooter>
-                        </CardFooter> */}
                     </Card>
                 </TabsContent>
             </Tabs>
