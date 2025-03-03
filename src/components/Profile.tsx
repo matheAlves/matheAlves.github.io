@@ -1,8 +1,9 @@
 import { motion, useScroll, useTransform } from 'framer-motion'
 
 const Profile = () => {
+  const isMobile = window.matchMedia('(max-width: 500px)').matches;
   const { scrollY } = useScroll();
-  const textX = useTransform(scrollY, [0, 900], [-100, 0]);
+  const textX = useTransform(scrollY, [0, isMobile ? 600 : 900], [-100, 0]);
   const textOpacity = useTransform(scrollY, [0, 900], [0, 1])
   const bulletPoints = [
     "Atuação em todas as etapas do desenvolvimento de software, desde a concepção e design de soluções até a implementação, testes e deploy.",
@@ -22,9 +23,9 @@ const Profile = () => {
     <motion.div
       style={{ x: textX, opacity: textOpacity }}
 
-      className='min-h-svh flex flex-col justify-center items-center lg:flex-row'
+      className='min-h-svh flex flex-col justify-center items-center xs:flex-row'
     >
-      <div className='flex flex-col h-svh lg:w-1/2 justify-center items-center'>
+      <div className='flex flex-col lg:h-svh lg:w-1/2 justify-center items-center'>
         <img
           className='w-40 h-40 rounded-full mx-auto'
           src={"/math.png"}
@@ -32,7 +33,7 @@ const Profile = () => {
           onClick={() => window.open('https://github.com/matheAlves', '_blank')}
         />
         <section
-          className='  text-white p-10 indent-5 tracking-wider justify-center text-justify flex flex-col'
+          className='text-white p-10 indent-5 tracking-wider justify-center lg:text-justify flex flex-col'
         >
 
           <p>Desenvolvedor full stack com mais de 2 anos de experiência profissional atuando em todas as camadas de desenvolvimento de aplicações web e mobile.</p>
@@ -49,7 +50,7 @@ const Profile = () => {
       </div>
 
       <section
-        className='lg:w-1/2 h-svh text-white p-10 indent-5 tracking-wider justify-center text-justify flex flex-col '
+        className='lg:w-1/2 lg:h-svh text-white p-10 indent-5 tracking-wider justify-center lg:text-justify flex flex-col leading-relaxed'
       >
         <ul className='list-disc list-inside space-y-2 '>
           {bulletPoints.map((item, index) => (

@@ -7,7 +7,8 @@ import Contact from './components/Contact'
 import StarsCanvas from './components/Stars'
 import { Toaster } from 'react-hot-toast';
 import Cyber from './components/Cyber'
-// import Profile from './components/Profile'
+import Profile from './components/Profile'
+
 function App() {
   return (
     <BrowserRouter>
@@ -22,10 +23,11 @@ function App() {
         <div className="relative overflow-hidden">
           <Hero />
         </div>
-{/* 
-        <div className='relative'>
+
+        <div  className='relative z-0'>
+          <StarsCanvas />
           <Profile />
-        </div> */}
+        </div>
 
         <div>
           <Cyber />
