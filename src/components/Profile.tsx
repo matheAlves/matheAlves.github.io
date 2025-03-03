@@ -37,7 +37,7 @@ const Profile = () => {
 
           <p>Desenvolvedor full stack com mais de 2 anos de experiência profissional atuando em todas as camadas de desenvolvimento de aplicações web e mobile.</p>
           <br></br>
-          <p>Atualmente, estou cursando Ciência da Computação na Universidade La Salle, e sou formado no curso de desenvolvimento web full stack da Trybe, onde desenvolvi projetos que incluem, entre outras, as tecnologias HTML, CSS, JavasCript, React, Redux, Node.Js, Docker, Express, TypeScript, MySQL, MongoDB e Python, além de conceitos como SOLID, REST, padrões de projeto, raspagem de dados, algoritmos e estruturas de dados.</p>
+          <p>Atualmente, estou cursando Ciência da Computação na Universidade La Salle, e sou formado no curso de desenvolvimento web full stack da Trybe, onde desenvolvi projetos que incluem, entre outras, tecnologias como JavasCript, React, Redux, Node.Js, Docker, Express, TypeScript, MySQL, MongoDB e Python, além de conceitos como SOLID, REST, padrões de projeto, raspagem de dados, algoritmos e estruturas de dados.</p>
           <br></br>
 
           <p>Um antigo entusiasta da tecnologia, desde onde ela nos diverte até onde facilita as nossas vidas.</p>
