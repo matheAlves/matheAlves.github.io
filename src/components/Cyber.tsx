@@ -3,7 +3,7 @@ import StarsCanvas from "@/components/Stars";
 
 const Cyber = () => {
     const { scrollYProgress } = useScroll();
-    const imageY = useTransform(scrollYProgress, [0, 2.5], [0, -500]);
+    const imageY = useTransform(scrollYProgress, [0, 2], [0, -700]);
     const imageOpacity = useTransform(scrollYProgress, [0, 0.3], [0, 0.6]);
 
 
