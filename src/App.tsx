@@ -42,7 +42,7 @@ function App() {
 
         <Toaster />
 
-        <nav className="flex justify-between items-center p-4 fixed top-0 left-0 right-0 z-50 bg-opacity-10 bg-neutral-400">
+        <nav className="flex justify-between items-center p-4 fixed top-0 left-0 right-0 z-50 bg-opacity-10 bg-neutral-500 backdrop-blur-sm">
           {/* Hamburger Menu Button */}
           <button
             className="md:hidden text-white p-2"
