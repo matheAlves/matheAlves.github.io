@@ -33,7 +33,7 @@ const Profile = () => {
           onClick={() => window.open('https://github.com/matheAlves', '_blank')}
         />
         <section
-          className='text-white p-10 indent-5 tracking-wider justify-center lg:text-justify flex flex-col'
+          className='text-white p-10 indent-5 tracking-wider justify-center text-justify flex flex-col'
         >
 
           <p>Desenvolvedor full stack com mais de 2 anos de experiência profissional atuando em todas as camadas de desenvolvimento de aplicações web e mobile.</p>
@@ -50,7 +50,7 @@ const Profile = () => {
       </div>
 
       <section
-        className='lg:w-1/2 lg:h-svh text-white p-10 indent-5 tracking-wider justify-center lg:text-justify flex flex-col leading-relaxed'
+        className='lg:w-1/2 lg:h-svh text-white p-10 indent-5 tracking-wider justify-center text-justify flex flex-col leading-relaxed'
       >
         <ul className='list-disc list-inside space-y-2 '>
           {bulletPoints.map((item, index) => (
