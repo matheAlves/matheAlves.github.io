@@ -32,15 +32,15 @@ const TechStack = () => {
                 className="text-primary font-monumentBlack text-4xl md:text-5xl lg:text-5xl holographic-text"
             >tech stack</h1>
             <Tabs defaultValue="frontend" >
-                <TabsList className="grid w-full grid-cols-3">
+                <TabsList className="grid w-full grid-cols-3 bg-white bg-opacity-70">
                     <TabsTrigger value="frontend">frontend</TabsTrigger>
                     <TabsTrigger value="backend">backend</TabsTrigger>
-                    <TabsTrigger value="tools & devOps">tools & devOps</TabsTrigger>
+                    <TabsTrigger className="min-[320px]:text-[10px]" value="tools & devOps">tools & devOps</TabsTrigger>
 
                 </TabsList>
 
                 <TabsContent value="frontend">
-                    <Card>
+                    <Card className="bg-white bg-opacity-95">
                         <CardHeader>
                             <CardTitle>frontend</CardTitle>
                             <CardDescription className={`${styles.fontItalic}`}>
@@ -61,7 +61,7 @@ const TechStack = () => {
                 </TabsContent>
 
                 <TabsContent value="backend">
-                    <Card>
+                    <Card className="bg-white bg-opacity-95">
                         <CardHeader>
                             <CardTitle>backend</CardTitle>
                             <CardDescription className={`${styles.fontItalic}`}>
@@ -80,7 +80,7 @@ const TechStack = () => {
                 </TabsContent>
 
                 <TabsContent value="tools & devOps">
-                    <Card>
+                    <Card className="bg-white bg-opacity-95">
                         <CardHeader>
                             <CardTitle>tools & devOps</CardTitle>
                             <CardDescription className={`${styles.fontItalic}`}>
