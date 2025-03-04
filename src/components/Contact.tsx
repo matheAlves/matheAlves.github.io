@@ -83,9 +83,9 @@ const Contact = () => {
       </form>
 
       <footer className="absolute bottom-0 text-center holographic-text">
-        <p className="text-primary text-xs">artwork: <a href="https://www.domcake.net/">DOMCAKE</a> · <a href="https://eyeondesign.aiga.org/">AIGA Eye on Design</a> · <a href='https://sketchfab.com/SketchyB0t_3D_Fabrication'>SketchyBot</a></p>
+        <p className="text-primary text-[8px] md:text-xs">artwork: <a href="https://www.domcake.net/">DOMCAKE</a> · <a href="https://eyeondesign.aiga.org/">AIGA Eye on Design</a> · <a href='https://sketchfab.com/SketchyB0t_3D_Fabrication'>SketchyBot</a></p>
 
-        <p className="text-primary text-xs">web development: © 2025 · Matheus Alves</p>
+        <p className="text-primary text-[8px] md:text-xs">web development: © 2025 · Matheus Alves</p>
       </footer>
     </motion.div>
 
