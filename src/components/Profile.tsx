@@ -3,8 +3,17 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 const Profile = () => {
   const isMobile = window.matchMedia('(max-width: 500px)').matches;
   const { scrollY } = useScroll();
+  
+  // Main container animation
   const textX = useTransform(scrollY, [0, isMobile ? 600 : 900], [-100, 0]);
-  const textOpacity = useTransform(scrollY, [0, 900], [0, 1])
+  const textOpacity = useTransform(scrollY, [0, 900], [0, 1]);
+
+  // Text reveal animations
+  const profileTextVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 }
+  };
+
   const bulletPoints = [
     "Atuação em todas as etapas do desenvolvimento de software, desde a concepção e design de soluções até a implementação, testes e deploy.",
     "Colaboração com equipes multidisciplinares (designers, product managers) para entender as necessidades do negócio e entregar soluções de alta qualidade.",
@@ -31,30 +40,44 @@ const Profile = () => {
           alt="a picture of Matheus"
           onClick={() => window.open('https://github.com/matheAlves', '_blank')}
         />
-        <section
-          className='text-white p-10 indent-5 tracking-wider justify-center text-start md:text-justify text-pretty flex flex-col'
-        >
-          <p>Desenvolvedor full stack com mais de 2 anos de experiência profissional atuando em todas as camadas de desenvolvimento de aplicações web e mobile.</p>
-          <br></br>
-          <p>Atualmente, estou cursando Ciência da Computação na Universidade La Salle, e sou formado no curso de desenvolvimento web full stack da Trybe, onde desenvolvi projetos que incluem, entre outras, tecnologias como JavaScript, React, Redux, Node.Js, Docker, Express, TypeScript, MySQL, MongoDB e Python, além de conceitos como SOLID, REST, padrões de projeto, raspagem de dados, algoritmos e estruturas de dados.</p>
-          <br></br>
-          <p>Um antigo entusiasta da tecnologia, desde onde ela nos diverte até onde facilita as nossas vidas.</p>
-          <br></br>
-          <p>Antes do desenvolvimento, atuei por 6 anos na área da educação como instrutor de inglês, e tive a oportunidade de trabalhar e estudar em Dublin, na Irlanda, onde residi por 1 ano e meio.</p>
+        <section className='text-white p-10 indent-5 tracking-wider justify-center text-start md:text-justify text-pretty flex flex-col'>
+          {[0, 1, 2, 3].map((index) => (
+            <motion.p
+              key={index}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={profileTextVariants}
+              transition={{ duration: 0.5, delay: index * 0.2 }}
+              className="mb-5"
+            >
+              {/* Keep your existing paragraphs, just wrap them in motion.p */}
+              {index === 0 && "Desenvolvedor full stack com mais de 2 anos de experiência profissional atuando em todas as camadas de desenvolvimento de aplicações web e mobile."}
+              {index === 1 && "Atualmente, estou cursando Ciência da Computação na Universidade La Salle, e sou formado no curso de desenvolvimento web full stack da Trybe, onde desenvolvi projetos que incluem, entre outras, tecnologias como JavaScript, React, Redux, Node.Js, Docker, Express, TypeScript, MySQL, MongoDB e Python, além de conceitos como SOLID, REST, padrões de projeto, raspagem de dados, algoritmos e estruturas de dados."}
+              {index === 2 && "Um antigo entusiasta da tecnologia, desde onde ela nos diverte até onde facilita as nossas vidas."}
+              {index === 3 && "Antes do desenvolvimento, atuei por 6 anos na área da educação como instrutor de inglês, e tive a oportunidade de trabalhar e estudar em Dublin, na Irlanda, onde residi por 1 ano e meio."}
+            </motion.p>
+          ))}
         </section>
       </div>
 
-      <section
-        className='md:w-1/2 md:min-h-svh text-white p-10 indent-5 tracking-wider justify-center text-pretty text-start md:text-justify flex flex-col leading-relaxed'
-      >
-        <ul className='list-disc list-inside space-y-2 '>
+      <section className='md:w-1/2 md:min-h-svh text-white p-10 indent-5 tracking-wider justify-center text-pretty text-start md:text-justify flex flex-col leading-relaxed'>
+        <ul className='list-disc list-inside space-y-2'>
           {bulletPoints.map((item, index) => (
-            <li key={index}><span className="holographic">{item}</span></li>
+            <motion.li
+              key={index}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={profileTextVariants}
+              transition={{ duration: 0.3, delay: index * 0.1 }}
+            >
+              <span className="holographic">{item}</span>
+            </motion.li>
           ))}
         </ul>
       </section>
     </motion.div>
-
   );
 };
 
