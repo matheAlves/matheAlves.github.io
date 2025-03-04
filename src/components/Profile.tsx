@@ -22,9 +22,9 @@ const Profile = () => {
   return (
     <motion.div
       style={{ x: textX, opacity: textOpacity }}
-      className='min-h-svh flex flex-col justify-center items-center min-[1000px]:flex-row text-md'
+      className='min-h-svh flex flex-col justify-center items-center min-[1300px]:flex-row text-md'
     >
-      <div className='flex flex-col lg:h-svh lg:w-1/2 md:justify-center items-center'>
+      <div className='flex flex-col md:min-h-svh min-[1300px]:w-1/2 md:justify-center items-center'>
         <img
           className='w-40 h-40 rounded-full mx-auto'
           src={"/math.png"}
@@ -45,7 +45,7 @@ const Profile = () => {
       </div>
 
       <section
-        className='lg:w-1/2 lg:h-svh text-white p-10 indent-5 tracking-wider justify-center text-pretty text-start md:text-justify flex flex-col leading-relaxed'
+        className='md:w-1/2 md:min-h-svh text-white p-10 indent-5 tracking-wider justify-center text-pretty text-start md:text-justify flex flex-col leading-relaxed'
       >
         <ul className='list-disc list-inside space-y-2 '>
           {bulletPoints.map((item, index) => (
