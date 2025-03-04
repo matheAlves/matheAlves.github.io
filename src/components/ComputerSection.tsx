@@ -13,7 +13,7 @@ const ComputerSection = () => {
       <p
 
         className="font-monumentLightItalic text-primary text-[0.6rem] md:text-xs">
-        Esta seção está em construção, mas você pode conferir alguns projetos (como esta página) em meu github: <a href="https://github.com/matheAlves" target="_blank" className="text-primary">github.com/matheAlves</a>
+        Esta seção está em construção, mas você pode conferir alguns projetos <a href="https://github.com/matheAlves/matheAlves.github.io" target="_blank" className="text-primary">(como esta página)</a> em meu github: <a href="https://github.com/matheAlves" target="_blank" className="text-primary">github.com/matheAlves</a>
       </p>
       </div>
 
