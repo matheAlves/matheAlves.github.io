@@ -11,7 +11,7 @@ const Computer = ({ isMobile }: { isMobile: boolean }) => {
 
   useFrame((_state, delta) => {
     if (meshRef.current && isMobile) {
-      meshRef.current.rotation.y -= delta * 0.5
+      meshRef.current.rotation.y -= delta * 1.5
     }
   })
 
@@ -20,9 +20,10 @@ const Computer = ({ isMobile }: { isMobile: boolean }) => {
     <mesh ref={meshRef}>
       <primitive
         object={scene}
-        scale={isMobile ? 0.8 : 1.25}
-        position={isMobile ? [0, -0.5, 0] : [0, -0.5, 0.5]}
-        rotation={[0.1, 0, 0]}
+        scale={isMobile ? 0.8 : 1}
+
+        // position={isMobile ? [0, -0.5, 0] : [0, -0.5, 0.5]}
+        rotation={[0.13, 0, 0]}
       />
     </mesh>
   )
@@ -54,8 +55,10 @@ const ComputerCanvas = () => {
   }, [])
   return (
     <Canvas
-      style={{ 
-        cursor: isGrabbing ? 'grabbing' : 'grab'
+      style={{
+        cursor: isGrabbing ? 'grabbing' : 'grab',
+        width: !isMobile ? "620px" : "auto",
+        // backgroundColor: "#000",
       }}
       onPointerDown={() => setIsGrabbing(true)}
       onPointerUp={() => setIsGrabbing(false)}
@@ -67,7 +70,7 @@ const ComputerCanvas = () => {
       <pointLight intensity={1} />
       <ambientLight intensity={0.05} />
       <Suspense fallback={<CanvasLoader />}>
-        {!isMobile && <OrbitControls autoRotate enableZoom={false} />}
+        {!isMobile && <OrbitControls autoRotate={true} autoRotateSpeed={10} enableZoom={false} />}
         <Computer isMobile={isMobile} />
       </Suspense>
     </Canvas>

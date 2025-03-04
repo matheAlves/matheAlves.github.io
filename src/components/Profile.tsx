@@ -33,14 +33,14 @@ const Profile = () => {
       style={{ x: textX, opacity: textOpacity }}
       className='min-h-svh flex flex-col justify-center items-center min-[1300px]:flex-row text-md'
     >
-      <div className='flex flex-col md:min-h-svh min-[1300px]:w-1/2 md:justify-center items-center'>
+      <div className='flex flex-col md:min-h-svh min-[1300px]:w-1/2 md:justify-center items-center p-10'>
         <img
           className='w-40 h-40 rounded-full mx-auto'
           src={"/math.png"}
           alt="a picture of Matheus"
           onClick={() => window.open('https://github.com/matheAlves', '_blank')}
         />
-        <section className='text-white p-10 indent-5 tracking-wider justify-center text-start md:text-justify text-pretty flex flex-col'>
+        <section className='text-white indent-5 tracking-wider justify-center text-start md:text-justify text-pretty flex flex-col mt-5'>
           {[0, 1, 2, 3].map((index) => (
             <motion.p
               key={index}
