@@ -56,13 +56,15 @@ function App() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex justify-center items-center gap-9 w-full">
             {sections.map((section, index) => (
-              <button
+                <button
                 key={index}
                 onClick={() => section.ref.current?.scrollIntoView({ behavior: 'smooth' })}
-                className="text-white hover:text-gray-300"
-              >
+                className="text-white hover:holographic"
+                onMouseEnter={(e) => e.currentTarget.classList.add('holographic')}
+                onMouseLeave={(e) => e.currentTarget.classList.remove('holographic')}
+                >
                 {section.name}
-              </button>
+                </button>
             ))}
           </div>
 
