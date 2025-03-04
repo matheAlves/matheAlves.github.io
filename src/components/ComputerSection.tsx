@@ -7,9 +7,15 @@ const ComputerSection = () => {
         className="text-primary font-monumentBlack text-4xl md:text-5xl lg:text-5xl mt-28"
       >projetos</h1>
       <ComputerCanvas />
+      <div
+      className='bg-neutral-500 bg-opacity-40 p-2 '
+      >
       <p
 
-        className="font-monumentLightItalic text-primary text-[0.6rem] md:text-xs">em breve...</p>
+        className="font-monumentLightItalic text-primary text-[0.6rem] md:text-xs">
+        Esta seção está em construção, mas você pode conferir alguns projetos (como esta página) em meu github: <a href="https://github.com/matheAlves" target="_blank" className="text-primary">github.com/matheAlves</a>
+      </p>
+      </div>
 
     </section>
   )

@@ -30,6 +30,7 @@ const Computer = ({ isMobile }: { isMobile: boolean }) => {
 
 const ComputerCanvas = () => {
   const [isMobile, setIsMobile] = useState(false)
+  const [isGrabbing, setIsGrabbing] = useState(false)
 
   useEffect(() => {
     // Add a listener for changes to the screen size
@@ -52,7 +53,14 @@ const ComputerCanvas = () => {
     }
   }, [])
   return (
-    <Canvas>
+    <Canvas
+      style={{ 
+        cursor: isGrabbing ? 'grabbing' : 'grab'
+      }}
+      onPointerDown={() => setIsGrabbing(true)}
+      onPointerUp={() => setIsGrabbing(false)}
+      onPointerLeave={() => setIsGrabbing(false)}
+    >
       <directionalLight position={[1, 1, 1]} intensity={1} />
       <hemisphereLight intensity={0.15} />
       {/* <spotLight position={[-20, 50, 10]} angle={0.12} penumbra={1} intensity={1} castShadow shadow-mapSize={1024} /> */}
