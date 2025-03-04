@@ -23,9 +23,9 @@ const Profile = () => {
     <motion.div
       style={{ x: textX, opacity: textOpacity }}
 
-      className='min-h-svh flex flex-col justify-center items-center xs:flex-row text-sm md:text-base '
+      className='min-h-svh flex flex-col justify-center items-center xs:flex-row text-xs md:text-base '
     >
-      <div className='flex flex-col lg:h-svh lg:w-1/2 justify-center items-center'>
+      <div className='flex flex-col lg:h-svh lg:w-1/2 md:justify-center items-center'>
         <img
           className='w-40 h-40 rounded-full mx-auto'
           src={"/math.png"}
@@ -33,7 +33,7 @@ const Profile = () => {
           onClick={() => window.open('https://github.com/matheAlves', '_blank')}
         />
         <section
-          className='text-white p-10 indent-5 tracking-wider justify-center text-justify flex flex-col'
+          className='text-white p-10 indent-5 tracking-wider justify-center text-start md:text-justify text-pretty flex flex-col'
         >
           <p>Desenvolvedor full stack com mais de 2 anos de experiência profissional atuando em todas as camadas de desenvolvimento de aplicações web e mobile.</p>
           <br></br>
@@ -46,7 +46,7 @@ const Profile = () => {
       </div>
 
       <section
-        className='lg:w-1/2 lg:h-svh text-white p-10 indent-5 tracking-wider justify-center text-justify flex flex-col leading-relaxed'
+        className='lg:w-1/2 lg:h-svh text-white p-10 indent-5 tracking-wider justify-center text-pretty text-start md:text-justify flex flex-col leading-relaxed'
       >
         <ul className='list-disc list-inside space-y-2 '>
           {bulletPoints.map((item, index) => (
