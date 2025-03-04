@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { ReactLenis } from 'lenis/react'
 import Hero from './components/Hero'
@@ -31,9 +31,6 @@ function App() {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const scrollToSection = () => {
-    contactsRef.current?.scrollIntoView({ behavior: 'smooth' })
-  }
   return (
     <BrowserRouter>
       <ReactLenis
