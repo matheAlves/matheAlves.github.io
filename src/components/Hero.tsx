@@ -25,7 +25,7 @@ const Hero = () => {
           Oi, eu sou o <span className="text-primary font-monumentBlack">Matheus</span>
         </h1>
         <p className={`${styles.heroSubText} text-white-100`}>
-          Um desenvolvedor fullstack entusiasta da <span className="text-[#915EFF]">criatividade</span>.
+          Um desenvolvedor fullstack entusiasta da <span className="holographic">criatividade</span>.
         </p>
 
         <div className="mt flex gap-5">
