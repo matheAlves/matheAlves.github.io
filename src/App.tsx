@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { ReactLenis } from 'lenis/react'
 import Hero from './components/Hero'
@@ -25,6 +25,12 @@ function App() {
     { ref: contactsRef as React.RefObject<HTMLDivElement>, name: 'Contato' },
   ]
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   const scrollToSection = () => {
     contactsRef.current?.scrollIntoView({ behavior: 'smooth' })
   }
@@ -39,16 +45,49 @@ function App() {
 
         <Toaster />
 
-        <nav className="flex justify-center items-center gap-9 p-4 fixed top-0 left-0 right-0 z-50 bg-opacity-10 bg-neutral-400 ">
-          {sections.map((section, index) => (
-            <button
-              key={index}
-              onClick={() => section.ref.current?.scrollIntoView({ behavior: 'smooth' })}
-              className="text-white hover:text-gray-300"
-            >
-              {section.name}
-            </button>
-          ))}
+        <nav className="flex justify-between items-center p-4 fixed top-0 left-0 right-0 z-50 bg-opacity-10 bg-neutral-400">
+          {/* Hamburger Menu Button */}
+          <button
+            className="md:hidden text-white p-2"
+            onClick={toggleMenu}
+          >
+            <div className="w-6 h-0.5 bg-white mb-1"></div>
+            <div className="w-6 h-0.5 bg-white mb-1"></div>
+            <div className="w-6 h-0.5 bg-white"></div>
+          </button>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex justify-center items-center gap-9 w-full">
+            {sections.map((section, index) => (
+              <button
+                key={index}
+                onClick={() => section.ref.current?.scrollIntoView({ behavior: 'smooth' })}
+                className="text-white hover:text-gray-300"
+              >
+                {section.name}
+              </button>
+            ))}
+          </div>
+
+          {/* Mobile Menu Overlay */}
+          {isMenuOpen && (
+            <div className="md:hidden fixed inset-0 bg-black bg-opacity-90 z-40">
+              <div className="flex flex-col items-center justify-center h-full gap-8">
+                {sections.map((section, index) => (
+                  <button
+                    key={index}
+                    onClick={() => {
+                      section.ref.current?.scrollIntoView({ behavior: 'smooth' });
+                      setIsMenuOpen(false);
+                    }}
+                    className="text-white text-xl hover:text-gray-300"
+                  >
+                    {section.name}
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
         </nav>
 
         <div ref={homeRef} className="relative overflow-hidden">
