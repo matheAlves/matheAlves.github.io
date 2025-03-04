@@ -23,7 +23,7 @@ const Profile = () => {
     <motion.div
       style={{ x: textX, opacity: textOpacity }}
 
-      className='min-h-svh flex flex-col justify-center items-center xs:flex-row text-xs md:text-base '
+      className='min-h-svh flex flex-col justify-center items-center xs:flex-row text-md'
     >
       <div className='flex flex-col lg:h-svh lg:w-1/2 md:justify-center items-center'>
         <img
