@@ -98,6 +98,9 @@ const TechStack = () => {
                     </Card>
                 </TabsContent>
             </Tabs>
+            <p className="absolute bottom-0 font-monumentLightItalic text-primary text-[0.6rem] md:text-xs">
+            ...e mais
+            </p>
         </motion.section >
     )
 }
