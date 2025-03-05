@@ -19,7 +19,7 @@ function App() {
 
   const sections = [
     { ref: homeRef as React.RefObject<HTMLDivElement>, name: 'Home' },
-    { ref: aboutRef as React.RefObject<HTMLDivElement>, name: 'Sobre' },
+    { ref: aboutRef as React.RefObject<HTMLDivElement>, name: 'Matheus' },
     { ref: stackRef as React.RefObject<HTMLDivElement>, name: 'Tech Stack' },
     { ref: projectsRef as React.RefObject<HTMLDivElement>, name: 'Projetos' },
     { ref: contactsRef as React.RefObject<HTMLDivElement>, name: 'Contato' },

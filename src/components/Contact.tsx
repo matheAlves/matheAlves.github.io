@@ -65,7 +65,7 @@ const Contact = () => {
       <div
         className='flex w-full h-[40rem] flex-col md:flex-row justify-center relative md:left-40'
       >
-        <form className='flex flex-col justify-between text-white' ref={formRef} onSubmit={sendEmail}>
+        <form className='md:w-[500px] flex flex-col justify-between text-white' ref={formRef} onSubmit={sendEmail}>
           <input
             type="text"
             name="user_name"
