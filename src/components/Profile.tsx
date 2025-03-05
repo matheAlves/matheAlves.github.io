@@ -61,7 +61,7 @@ const Profile = () => {
         </section>
       </div>
 
-      <section className='md:w-1/2 md:min-h-svh text-white p-10 indent-5 tracking-wider justify-center text-pretty text-start md:text-justify flex flex-col leading-relaxed'>
+      {/* <section className='md:w-1/2 md:min-h-svh text-white p-10 indent-5 tracking-wider justify-center text-pretty text-start md:text-justify flex flex-col leading-relaxed'>
         <ul className='list-disc list-inside space-y-2'>
           {bulletPoints.map((item, index) => (
             <motion.li
@@ -76,7 +76,7 @@ const Profile = () => {
             </motion.li>
           ))}
         </ul>
-      </section>
+      </section> */}
     </motion.div>
   );
 };
