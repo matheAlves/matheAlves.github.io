@@ -14,20 +14,20 @@ const Profile = () => {
     visible: { opacity: 1, y: 0 }
   };
 
-  const bulletPoints = [
-    "Atuação em todas as etapas do desenvolvimento de software, desde a concepção e design de soluções até a implementação, testes e deploy.",
-    "Colaboração com equipes multidisciplinares (designers, product managers) para entender as necessidades do negócio e entregar soluções de alta qualidade.",
-    "Criação de novas funcionalidades e componentes reutilizáveis em React e React Native.",
-    "Implementação de layouts responsivos e interfaces de usuário intuitivas.",
-    "Integração de APIs RESTful (Node.js, Express) para comunicação entre front-end e back-end.",
-    "Desenvolvimento de testes unitários e de integração para garantir a qualidade do código.",
-    "Correção de bugs e implementação de melhorias em aplicações existentes.",
-    "Monitoramento de aplicações em produção e resolução de problemas.",
-    "Atualização de dependências e tecnologias utilizadas.",
-    "Criação e manutenção de banco de dados PostgreSQL.",
-    "Otimização de queries para melhorar o desempenho do banco de dados.",
-    "Configuração e gerenciamento de pipelines de deploy (Heroku, Appcenter).",
-  ]
+  // const bulletPoints = [
+  //   "Atuação em todas as etapas do desenvolvimento de software, desde a concepção e design de soluções até a implementação, testes e deploy.",
+  //   "Colaboração com equipes multidisciplinares (designers, product managers) para entender as necessidades do negócio e entregar soluções de alta qualidade.",
+  //   "Criação de novas funcionalidades e componentes reutilizáveis em React e React Native.",
+  //   "Implementação de layouts responsivos e interfaces de usuário intuitivas.",
+  //   "Integração de APIs RESTful (Node.js, Express) para comunicação entre front-end e back-end.",
+  //   "Desenvolvimento de testes unitários e de integração para garantir a qualidade do código.",
+  //   "Correção de bugs e implementação de melhorias em aplicações existentes.",
+  //   "Monitoramento de aplicações em produção e resolução de problemas.",
+  //   "Atualização de dependências e tecnologias utilizadas.",
+  //   "Criação e manutenção de banco de dados PostgreSQL.",
+  //   "Otimização de queries para melhorar o desempenho do banco de dados.",
+  //   "Configuração e gerenciamento de pipelines de deploy (Heroku, Appcenter).",
+  // ]
   return (
     <motion.div
       style={{ x: textX, opacity: textOpacity }}
