@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { BrowserRouter } from 'react-router-dom'
 import { ReactLenis } from 'lenis/react'
 import Hero from './components/Hero'
-import ComputerSection from './components/ComputerSection'
+import Projects from './components/Projects'
 import TechStack from './components/TechStack'
 import Contact from './components/Contact'
 import StarsCanvas from './components/Stars'
@@ -171,7 +171,7 @@ function App() {
         </div>
 
         <div ref={projectsRef}>
-          <ComputerSection />
+          <Projects />
         </div>
 
         <div ref={contactsRef} className='relative z-0'>

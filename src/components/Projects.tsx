@@ -12,19 +12,7 @@ const projects = [
   // Add more projects here
 ];
 
-const ComputerSection = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    customPaging: () => (
-      <div className="w-2 h-2 bg-primary rounded-full mt-4"></div>
-    ),
-  };
-
+const Projects = () => {
   return (
     <section className="p-8 bg-2000-pattern min-h-svh bg-cover justify-around items-center flex-col z-10 flex relative">
       <h1 className="text-primary font-monumentBlack text-4xl md:text-5xl lg:text-5xl mb-5 sm:mb-0">
@@ -39,4 +27,4 @@ const ComputerSection = () => {
   );
 };
 
-export default ComputerSection;
+export default Projects;
