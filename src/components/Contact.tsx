@@ -58,7 +58,7 @@ const Contact = () => {
 
   return (
 
-    <motion.div className='min-h-svh flex flex-col items-center justify-around bg-black-100 p-8 rounded-2xl relative overflow-hidden'>
+    <motion.div className='min-h-svh flex flex-col items-center justify-between sm:justify-around bg-black-100 p-8 rounded-2xl relative overflow-hidden'>
       <h1
         className="text-primary font-monumentBlack text-4xl md:text-5xl lg:text-5xl holographic-text mb-1"
       >contato</h1>
