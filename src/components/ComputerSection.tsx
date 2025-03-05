@@ -3,7 +3,7 @@ import ProjectCard from './ProjectCard';
 const projects = [
   {
     title: "Scrappy",
-    description: "A idéia deste projeto é ser um espaço virtual onde você pode deixar recados e notas para seus amigos. Você pode criar, editar e excluir notas (Scrappies) clicando em qualquer lugar da tela, além de poder arrastá-las para reordenar. Você pode conferir uma demonstração do projeto pelo link abaixo, mas ele ainda está em estágio inicial de desenvolvimento. Futuramente você poderá criar uma conta e compartilhar suas notas com seus amigos e o Scrappy deve ser uma rede social totalmente funcional! Se você gostou do projeto e quer contribuir com desenvolvimento ou design, fique a vontade para visitar o repositório no GitHub ou entrar em contato comigo!",
+    description: "A idéia deste projeto é ser um espaço virtual onde você pode deixar recados e notas para seus amigos. Você pode criar notas (Scrappies) clicando em qualquer lugar da tela, além de poder editar, excluir e arrastá-las para reordenar. Você pode conferir uma demonstração do projeto pelo link abaixo, mas ele ainda está em estágio inicial de desenvolvimento. Futuramente você poderá criar uma conta e compartilhar suas notas com seus amigos e o Scrappy deve ser uma rede social totalmente funcional! Se você gostou do projeto e quer contribuir com desenvolvimento ou design, fique a vontade para visitar o repositório no GitHub ou entrar em contato comigo!",
     technologies: ["React Router", "TypeScript", "Tailwind", "Dnd Kit"],
     screenshots: ["/scrappy-1.png", "/scrappy-2.png", "scrappy-3.png"],
     githubLink: "https://github.com/matheAlves/scrappy-react-router",
