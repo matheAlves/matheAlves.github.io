@@ -27,10 +27,10 @@ function App() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('Home');
-  const [indicatorStyle, setIndicatorStyle] = useState({
-    left: 0,
-    width: 0,
-  });
+  // const [indicatorStyle, setIndicatorStyle] = useState({
+  //   left: 0,
+  //   width: 0,
+  // });
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
