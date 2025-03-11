@@ -59,19 +59,19 @@ function App() {
     };
   }, []);
 
-  useEffect(() => {
-    const activeButton = document.querySelector(`[data-section="${activeSection}"]`);
-    if (activeButton) {
-      const rect = activeButton.getBoundingClientRect();
-      const navRect = activeButton.parentElement?.getBoundingClientRect();
-      if (navRect) {
-        setIndicatorStyle({
-          left: rect.left - navRect.left,
-          width: rect.width,
-        });
-      }
-    }
-  }, [activeSection]);
+  // useEffect(() => {
+  //   const activeButton = document.querySelector(`[data-section="${activeSection}"]`);
+  //   if (activeButton) {
+  //     const rect = activeButton.getBoundingClientRect();
+  //     const navRect = activeButton.parentElement?.getBoundingClientRect();
+  //     if (navRect) {
+  //       setIndicatorStyle({
+  //         left: rect.left - navRect.left,
+  //         width: rect.width,
+  //       });
+  //     }
+  //   }
+  // }, [activeSection]);
 
   return (
     <BrowserRouter>
@@ -98,13 +98,13 @@ function App() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex justify-center items-center gap-9 w-full relative">
             {/* Animated Underline Indicator */}
-            <div
+            {/* <div
               className="absolute bottom-[-16px] h-[4px] bg-white transition-all duration-300 ease-in-out"
               style={{
                 left: `${indicatorStyle.left}px`,
                 width: `${indicatorStyle.width}px`,
               }}
-            />
+            /> */}
 
             {sections.map((section, index) => (
               <button
